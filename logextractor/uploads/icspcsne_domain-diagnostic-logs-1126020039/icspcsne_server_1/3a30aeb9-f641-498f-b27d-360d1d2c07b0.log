@@ -1,0 +1,371 @@
+########################################## METADATA ########################################## 
+
+EXTRACTED LOGS FROM icspcsne_server_1-diagnostic.log
+
+############################################################################################## 
+
+[2795] [2018-11-26T02:28:54.020+00:00] [icspcsne_server_1] [ERROR] [WSM-00279] [oracle.wsm.resources.security] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] [oracle.wsm.policy.name: oracle/oauth2_config_client_policy] The following Fault Message is received at the client side from the service:- [[
+[2796] faultName: {{http://docs.oasis-open.org/wsbpel/2.0/process/executable}missingRequest}
+[2797] messageType: {{http://schemas.oracle.com/bpel/extension}RuntimeFaultMessage}
+[2798] .
+[2799] 
+[2800] The client side policy is:- 
+[2801] oracle/oauth2_config_client_policy.
+[2802] 
+[2803] The service endpoint url is:- 
+[2804] http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep.
+[2805] 
+[2806] Keystore properties:-
+[2807]  {keystore.enc.csf.key=orakey, keystore.sig.csf.key=orakey}.
+[2808] 
+[2809] Properties found in the message context (Partial list):-
+[2810] {}.
+[2811] 
+[2812]  PolicyReference OverrideProperty: 
+[2813] [OverrideProperty [name=oauth2.client.csf.key, value=idcs.oauth2.client.credentials], OverrideProperty [name=token.uri, value=https://idcs-9e503034a2fe438ba4ff609320a65b55.identity.c9dev1.oc9qadev.com:443/oauth2/v1/token]] 
+[2814] 
+[2815] Policy configuration properties (some of these may be overridden by the properties passed in the PolicyReference or message context, for details about the order of precedence of properties consult documentation):-
+[2816] {oauth2.client.csf.key=basic.client.credentials, token.uri=http://host:port/tokens, role=ultimateReceiver}.
+[2817] 
+[2818] Other related information:-
+[2819] {oracle.integration.platform.common.subject=Subject:
+[2820] 	Principal: FB6CF2E013B14EFBBD7A5FD008AD0BF1.ServiceAdministrator
+[2821] 	Principal: A3A113A0176346C2B36F3343135D788B.ServiceAdministrator
+[2822] 	Principal: E7C4CA4295C44EE3851642378D8EB107.ServiceAdministrator
+[2823] 	Principal: ServiceAdministrator [CD45BF3AE4244AE094AA3378AE757F74_APPID]
+[2824] 	Principal: ATP_FleetAdministrator [DF2575F1A8754FDD8AFFCE043D6B95A1_APPID]
+[2825] 	Principal: E264E2105EC84150AC87E33C304CE1B6.ServiceAdministrator
+[2826] 	Principal: ServiceAdministrator [0223D8B2E1F94CB092A23244D4CFCA22_APPID]
+[2827] 	Principal: ssaInstanceAdmin
+[2828] 	Principal: 2C7C2EF576A74626B8A9674C445EF4E8.ServiceAdministrator
+[2829] 	Principal: 6054646A5E8E4DCD817372D74CCB6577.ServiceAdministrator
+[2830] 	Principal: ServiceAdministrator [77CA4A7063C44B7C91A5D6A66E39828F_APPID]
+[2831] 	Principal: 51719116686040D88F5A8E3B83D1BBDD.ServiceAdministrator
+[2832] 	Principal: CD45BF3AE4244AE094AA3378AE757F74.ServiceAdministrator
+[2833] 	Principal: ServiceAdministrator [29097E961CDF4E548C6ACEC324ECC929_APPID]
+[2834] 	Principal: F395B8050E9B4907AC5F6A9FC6E35B9A.ServiceAdministrator
+[2835] 	Principal: 638CA4EDD8AA4152B666E9106B2F7636.ServiceAdministrator
+[2836] 	Principal: ServiceAdministrator [638CA4EDD8AA4152B666E9106B2F7636_APPID]
+[2837] 	Principal: 0223D8B2E1F94CB092A23244D4CFCA22.ServiceAdministrator
+[2838] 	Principal: ServiceAdministrator [132743A86F7347DCA1CE8E79769C255A_APPID]
+[2839] 	Principal: ServiceAdministrator [6054646A5E8E4DCD817372D74CCB6577_APPID]
+[2840] 	Principal: E77C005AB920414C9B254A337D03D243.ServiceAdministrator
+[2841] 	Principal: ServiceAdministrator [37D1F84D3F6A47328FC235720BC3F208_APPID]
+[2842] 	Principal: ServiceAdministrator [E77C005AB920414C9B254A337D03D243_APPID]
+[2843] 	Principal: E12C6C3D038B44339C1A38AC5BA8D0F6.ServiceAdministrator
+[2844] 	Principal: 1F6057024806438794928C426B890CBD.ServiceAdministrator
+[2845] 	Principal: 29097E961CDF4E548C6ACEC324ECC929.ServiceAdministrator
+[2846] 	Principal: 31331686922D4BA890BF5A76D4204917.ServiceAdministrator
+[2847] 	Principal: ServiceAdministrator [1B0FFD72AFEA4C8E8F94EF2798251D36_APPID]
+[2848] 	Principal: 18E06A14610C49129CF82744B33FAF48.ServiceAdministrator
+[2849] 	Principal: ServiceAdministrator [F395B8050E9B4907AC5F6A9FC6E35B9A_APPID]
+[2850] 	Principal: 4D662EBE56D14745AF6F6B4DDC51B0EC.ServiceAdministrator
+[2851] 	Principal: AF33621727054CEAACB1FD0A934407D1.ServiceAdministrator
+[2852] 	Principal: ServiceAdministrator [FB6CF2E013B14EFBBD7A5FD008AD0BF1_APPID]
+[2853] 	Principal: ServiceAdministrator [14282F9D82A842958AF89B01CDB301DE_APPID]
+[2854] 	Principal: 14282F9D82A842958AF89B01CDB301DE.ServiceAdministrator
+[2855] 	Principal: ServiceAdministrator [A3A113A0176346C2B36F3343135D788B_APPID]
+[2856] 	Principal: ServiceAdministrator [2C7C2EF576A74626B8A9674C445EF4E8_APPID]
+[2857] 	Principal: ServiceAdministrator [31331686922D4BA890BF5A76D4204917_APPID]
+[2858] 	Principal: ServiceAdministrator [4D662EBE56D14745AF6F6B4DDC51B0EC_APPID]
+[2859] 	Principal: 77CA4A7063C44B7C91A5D6A66E39828F.ServiceAdministrator
+[2860] 	Principal: ServiceAdministrator [18E06A14610C49129CF82744B33FAF48_APPID]
+[2861] 	Principal: 132743A86F7347DCA1CE8E79769C255A.ServiceAdministrator
+[2862] 	Principal: 1B0FFD72AFEA4C8E8F94EF2798251D36.ServiceAdministrator
+[2863] 	Principal: ServiceAdministrator [E7C4CA4295C44EE3851642378D8EB107_APPID]
+[2864] 	Principal: ServiceAdministrator [54B6F0BABC2D499C8AC359DDE71C85B6_APPID]
+[2865] 	Principal: 37D1F84D3F6A47328FC235720BC3F208.ServiceAdministrator
+[2866] 	Principal: ServiceAdministrator [E12C6C3D038B44339C1A38AC5BA8D0F6_APPID]
+[2867] 	Principal: 54B6F0BABC2D499C8AC359DDE71C85B6.ServiceAdministrator
+[2868] 	Principal: ServiceAdministrator [AF33621727054CEAACB1FD0A934407D1_APPID]
+[2869] 	Principal: ServiceAdministrator [E264E2105EC84150AC87E33C304CE1B6_APPID]
+[2870] 	Principal: ServiceAdministrator [51719116686040D88F5A8E3B83D1BBDD_APPID]
+[2871] 	Principal: ServiceAdministrator [1F6057024806438794928C426B890CBD_APPID]
+[2872] 	Principal: authenticated-role
+[2873] }.
+[2874] ]]
+
+
+ [2875] [2018-11-26T02:28:54.021+00:00] [icspcsne_server_1] [ERROR] [] [oracle.webservices.jaxws] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] Error while invoking endpoint "http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep" from client; Security Subject: FB6CF2E013B14EFBBD7A5FD008AD0BF1.ServiceAdministrator
+
+ [2876] [2018-11-26T02:28:54.023+00:00] [icspcsne_server_1] [ERROR] [CASDK-0033] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] Soap Fault occurred while invoking endpoint http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep
+
+ [2877] [2018-11-26T02:28:54.023+00:00] [icspcsne_server_1] [ERROR] [] [oracle.osb.transports.jca] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] ErrorCode returned by Cloud Provider => ns0:missingRequest
+
+ [2878] [2018-11-26T02:28:54.024+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] JCABinding <outbound> Connection Properties : [[[2879] [managedSecurity : true]
+[2880] [endpointURL : http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep]
+[2881] [targetWSDLURL : http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep?WSDL]
+[2882] [security : NONE]
+[2883] [applicationVersion : 1_0]
+[2884] [cloudAdapterName : soap]
+[2885] 
+[2886] ]]
+
+
+ [2887] [2018-11-26T02:28:54.024+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] JCABinding <outbound> Operation Properties : [[[2888] [generatePartnerLink : false]
+[2889] [endpointWSDLURL : CauseError_REQUEST.wsdl]
+[2890] [inboundAsyncEnabled : false]
+[2891] [enableMTOMProcessing : false]
+[2892] [targetPort : ThrowError_pt]
+[2893] [targetService : throwerror_client_ep]
+[2894] [targetOperation : process]
+[2895] [operationPath : process]
+[2896] [targetInvocationStyle : REQUEST_RESPONSE]
+[2897] [skipAttachmentProcessing : true]
+[2898] [jcaTransportEnabled : true]
+[2899] 
+[2900] ]]
+
+
+ [2901] [2018-11-26T02:28:54.024+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] JCABinding <outbound> Message Headers : [[[2902] [tracking.execution.context : 1.0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e;laEUrXtgv0YOjITOZSPPi3VRXU8TmHROfPQRbUBGjTOSjJTQoLPIiJSTXURO_PGPp1CCo7ED0_NRmHROgLQBnVPOi4USXJRQdURPi9IRnKTOiJPP9KPDl2FDm9DWq6GRjNTI^PKCk0CCDKKHlMHHeNDI2OCJIPOSm9OPl2LUhMLMk0CCn6RI0_RRmHROgLQBnVPOi4USXJRQdURPi1LTdLRSZPQRbVGS_ITOoPRRiUHOhLRDkIVRZLRSnGZOjITOZSPPi3VRXU8TmHROfPQRbUBGjTOSjJTQoLRK3HHHiKTQoPTI^LDCm9CEt0ZOjITOZSPPi3VRXU8TmHROfPQRbU9KpPPPnJPQiNRK3HHHiKTQoPTI^LDCm9DEl0YLjITOZSPPi3VRXU8TmHROfPQRbUAHgVRT5MTPiKTI^LDCn5DDq0XPjITOZSPPi3VRXU8TmHROfPQRbU9IiJSTXURO_PGP3ITPXKTQjUOLdTPP4HDDo3DCt9FCn3CDk1CWUVQSXJOR_UBSjHQBoITOZRPQiNQB6SRRrJIS_HOTdVQRKPPR_KHCp4FCl9DEn3ECt2FC0eNRmHROgLQBnVPOi4USXJRQdURPi2HTnPQR_JVS5MTPiKTI^KECm6CD0XNRmHROgLQBnVPOi4USXJRQdURPi6GRjNTI^JDDr9CWMVQSXJOR_UBSjHQBoITOZRPQiNQBJJHG5UOTdKTU9KPDl2DEt2CWXVQSXJOR_UBSjHQBoITOZRPQiNQB6SRRrJNG1GLOmKTQoPRRiPGPl2CW3JOTsLKS^HOT_JLSgKCTmLTP]
+[2903] [tracking.wrapped.dms.context : 1.0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e;laEUrXtgv0YOjITOZSPPi3VRXU8TmHROfPQRbUBGjTOSjJTQoLPIiJSTXURO_PGPp1CCo7ED0_NRmHROgLQBnVPOi4USXJRQdURPi9IRnKTOiJPP9KPDl2FDm9DWq6GRjNTI^PKCk0CCDKKHlMHHeNDI2OCJIPOSm9OPl2LUhMLMk0CCn6RI0_RRmHROgLQBnVPOi4USXJRQdURPi1LTdLRSZPQRbVGS_ITOoPRRiUHOhLRDkIVRZLRSnGZOjITOZSPPi3VRXU8TmHROfPQRbUBGjTOSjJTQoLRK3HHHiKTQoPTI^LDCm9CEt0ZOjITOZSPPi3VRXU8TmHROfPQRbU9KpPPPnJPQiNRK3HHHiKTQoPTI^LDCm9DEl0YLjITOZSPPi3VRXU8TmHROfPQRbUAHgVRT5MTPiKTI^LDCn5DDq0XPjITOZSPPi3VRXU8TmHROfPQRbU9IiJSTXURO_PGP3ITPXKTQjUOLdTPP4HDDo3DCt9FCn3CDk1CWUVQSXJOR_UBSjHQBoITOZRPQiNQB6SRRrJIS_HOTdVQRKPPR_KHCp4FCl9DEn3ECt2FC0eNRmHROgLQBnVPOi4USXJRQdURPi2HTnPQR_JVS5MTPiKTI^KECm6CD0XNRmHROgLQBnVPOi4USXJRQdURPi6GRjNTI^JDDr9CWMVQSXJOR_UBSjHQBoITOZRPQiNQBJJHG5UOTdKTU9KPDl2DEt2CWXVQSXJOR_UBSjHQBoITOZRPQiNQB6SRRrJNG1GLOmKTQoPRRiPGPl2CW3JOTsLKS^HOT_JLSgKCTmLTP]
+[2904] [Content-Type : text/xml]
+[2905] 
+[2906] ]]
+
+
+ [2907] [2018-11-26T02:28:54.025+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] JCABinding <outbound> Integration Payload : [[[2908]  <process xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:nstrgmpr="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError">
+[2909]    <nstrgmpr:input>Automation</nstrgmpr:input>
+[2910] </process>
+[2911] 
+[2912] ]]
+
+
+ [2913] [2018-11-26T02:28:54.025+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] JCABinding <outbound> Dispatch Request Context : [[[2914] [oracle.j2ee.ws.client.dispatch : oracle.j2ee.ws.client.jaxws.OracleDispatchImpl@69c4b947]
+[2915] [javax.net.ssl.trustStore : kss://system/trust]
+[2916] [oracle.webservices.httpReadTimeout : 300000]
+[2917] [oracle.webservices.proxyHost : www-proxy.us.oracle.com]
+[2918] [javax.net.ssl.trustStoreType : kss]
+[2919] [oracle.webservices.httpConnTimeout : 300000]
+[2920] [oracle.jaxws.dispatch.policy.subject : http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError#wsdl.endpoint(throwerror_client_ep/ThrowError_pt)|throwerror_client_ep|/icspcsne_domain/icspcsne_server_1/Service Bus JCA Transport Provider/WEBs/default/WEBSERVICECLIENTs/%7Bhttp%3A%2F%2Fxmlns.oracle.com%2FGradingSystem_refined%2FThrowError%2FThrowError%7Dthrowerror_client_ep/PORTs/ThrowError_pt]
+[2921] [javax.xml.ws.soap.http.soapaction.use : true]
+[2922] [javax.xml.ws.service.endpoint.address : http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep]
+[2923] [javax.xml.ws.binding.attachments.outbound : {}]
+[2924] [javax.xml.ws.soap.http.soapaction.uri : process]
+[2925] [oracle.webservices.proxyPort : 80]
+[2926] 
+[2927] ]]
+
+
+ [2928] [2018-11-26T02:28:54.025+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] JCABinding <outbound> Source Wsdl Metadata : [[[2929] endpointURL : http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep
+[2930] portName : ThrowError_pt
+[2931] portTypeName : {http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError}ThrowError
+[2932] soapVersion : SOAP11
+[2933] targetWSDLNS : http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError
+[2934] 
+[2935] ]]
+
+
+ [2936] [2018-11-26T02:28:54.026+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] JCABinding <outbound> SoapEnvelope : [[[2937] POST http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep HTTP/1.1 
+[2938] Content-Type : text/xml
+[2939] SOAPAction : process
+[2940] <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+[2941] <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+[2942] <env:Header/>
+[2943] <env:Body>
+[2944] <process xmlns="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError" xmlns:nstrgmpr="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+[2945] <nstrgmpr:input>Automation</nstrgmpr:input>
+[2946] </process>
+[2947] </env:Body>
+[2948] </env:Envelope>
+[2949] 
+[2950] ]]
+
+
+ [2951] [2018-11-26T02:28:54.026+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] JCABinding <outbound> SOAPFault : [[[2952] Received a SOAP fault while invoking endpoint target: http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep. This indicates a processing exception on the service endpoint side. Please check service side logs to further diagnose the problem <![CDATA[ 
+[2953] Fault Code : ns0:missingRequest
+[2954] Fault String : faultName: {{http://docs.oasis-open.org/wsbpel/2.0/process/executable}missingRequest}
+[2955] messageType: {{http://schemas.oracle.com/bpel/extension}RuntimeFaultMessage}
+[2956] 
+[2957] Fault Details : 
+[2958] <exception/>
+[2959]  ]]>
+[2960] ]]
+
+
+ [2961] [2018-11-26T02:28:54.026+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] JCABinding <outbound> Request Payload : [[[2962] <process xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:nstrgmpr="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError">
+[2963]    <nstrgmpr:input>Automation</nstrgmpr:input>
+[2964] </process>
+[2965] 
+[2966] ]]
+
+
+ [2967] [2018-11-26T02:28:54.028+00:00] [icspcsne_server_1] [ERROR] [OSB-381990] [oracle.osb.transports.jca.jcatransport] [tid: [ACTIVE].ExecuteThread: '41' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-0001329e,1:28615:38] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 579] [oracle.soa.tracking.InstanceId: 12729] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqFEj7IB8LRip2id1RymVY0003fK] Invoke JCA outbound service failed with application error, exception: Client received SOAP Fault from server : faultName: {{http://docs.oasis-open.org/wsbpel/2.0/process/executable}missingRequest}[[[2968] messageType: {{http://schemas.oracle.com/bpel/extension}RuntimeFaultMessage}
+[2969] 
+[2970] ]]
+
+[3019] [2018-11-26T02:29:02.750+00:00] [icspcsne_server_1] [ERROR] [WSM-00279] [oracle.wsm.resources.security] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] [oracle.wsm.policy.name: oracle/oauth2_config_client_policy] The following Fault Message is received at the client side from the service:- [[
+[3020] faultName: {{http://docs.oasis-open.org/wsbpel/2.0/process/executable}missingRequest}
+[3021] messageType: {{http://schemas.oracle.com/bpel/extension}RuntimeFaultMessage}
+[3022] .
+[3023] 
+[3024] The client side policy is:- 
+[3025] oracle/oauth2_config_client_policy.
+[3026] 
+[3027] The service endpoint url is:- 
+[3028] http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep.
+[3029] 
+[3030] Keystore properties:-
+[3031]  {keystore.enc.csf.key=orakey, keystore.sig.csf.key=orakey}.
+[3032] 
+[3033] Properties found in the message context (Partial list):-
+[3034] {}.
+[3035] 
+[3036]  PolicyReference OverrideProperty: 
+[3037] [OverrideProperty [name=oauth2.client.csf.key, value=idcs.oauth2.client.credentials], OverrideProperty [name=token.uri, value=https://idcs-9e503034a2fe438ba4ff609320a65b55.identity.c9dev1.oc9qadev.com:443/oauth2/v1/token]] 
+[3038] 
+[3039] Policy configuration properties (some of these may be overridden by the properties passed in the PolicyReference or message context, for details about the order of precedence of properties consult documentation):-
+[3040] {oauth2.client.csf.key=basic.client.credentials, token.uri=http://host:port/tokens, role=ultimateReceiver}.
+[3041] 
+[3042] Other related information:-
+[3043] {oracle.integration.platform.common.subject=Subject:
+[3044] 	Principal: FB6CF2E013B14EFBBD7A5FD008AD0BF1.ServiceAdministrator
+[3045] 	Principal: A3A113A0176346C2B36F3343135D788B.ServiceAdministrator
+[3046] 	Principal: E7C4CA4295C44EE3851642378D8EB107.ServiceAdministrator
+[3047] 	Principal: ServiceAdministrator [CD45BF3AE4244AE094AA3378AE757F74_APPID]
+[3048] 	Principal: ATP_FleetAdministrator [DF2575F1A8754FDD8AFFCE043D6B95A1_APPID]
+[3049] 	Principal: E264E2105EC84150AC87E33C304CE1B6.ServiceAdministrator
+[3050] 	Principal: ServiceAdministrator [0223D8B2E1F94CB092A23244D4CFCA22_APPID]
+[3051] 	Principal: ssaInstanceAdmin
+[3052] 	Principal: 2C7C2EF576A74626B8A9674C445EF4E8.ServiceAdministrator
+[3053] 	Principal: 6054646A5E8E4DCD817372D74CCB6577.ServiceAdministrator
+[3054] 	Principal: ServiceAdministrator [77CA4A7063C44B7C91A5D6A66E39828F_APPID]
+[3055] 	Principal: 51719116686040D88F5A8E3B83D1BBDD.ServiceAdministrator
+[3056] 	Principal: CD45BF3AE4244AE094AA3378AE757F74.ServiceAdministrator
+[3057] 	Principal: ServiceAdministrator [29097E961CDF4E548C6ACEC324ECC929_APPID]
+[3058] 	Principal: F395B8050E9B4907AC5F6A9FC6E35B9A.ServiceAdministrator
+[3059] 	Principal: 638CA4EDD8AA4152B666E9106B2F7636.ServiceAdministrator
+[3060] 	Principal: ServiceAdministrator [638CA4EDD8AA4152B666E9106B2F7636_APPID]
+[3061] 	Principal: 0223D8B2E1F94CB092A23244D4CFCA22.ServiceAdministrator
+[3062] 	Principal: ServiceAdministrator [132743A86F7347DCA1CE8E79769C255A_APPID]
+[3063] 	Principal: ServiceAdministrator [6054646A5E8E4DCD817372D74CCB6577_APPID]
+[3064] 	Principal: E77C005AB920414C9B254A337D03D243.ServiceAdministrator
+[3065] 	Principal: ServiceAdministrator [37D1F84D3F6A47328FC235720BC3F208_APPID]
+[3066] 	Principal: ServiceAdministrator [E77C005AB920414C9B254A337D03D243_APPID]
+[3067] 	Principal: E12C6C3D038B44339C1A38AC5BA8D0F6.ServiceAdministrator
+[3068] 	Principal: 1F6057024806438794928C426B890CBD.ServiceAdministrator
+[3069] 	Principal: 29097E961CDF4E548C6ACEC324ECC929.ServiceAdministrator
+[3070] 	Principal: 31331686922D4BA890BF5A76D4204917.ServiceAdministrator
+[3071] 	Principal: ServiceAdministrator [1B0FFD72AFEA4C8E8F94EF2798251D36_APPID]
+[3072] 	Principal: 18E06A14610C49129CF82744B33FAF48.ServiceAdministrator
+[3073] 	Principal: ServiceAdministrator [F395B8050E9B4907AC5F6A9FC6E35B9A_APPID]
+[3074] 	Principal: 4D662EBE56D14745AF6F6B4DDC51B0EC.ServiceAdministrator
+[3075] 	Principal: AF33621727054CEAACB1FD0A934407D1.ServiceAdministrator
+[3076] 	Principal: ServiceAdministrator [FB6CF2E013B14EFBBD7A5FD008AD0BF1_APPID]
+[3077] 	Principal: ServiceAdministrator [14282F9D82A842958AF89B01CDB301DE_APPID]
+[3078] 	Principal: 14282F9D82A842958AF89B01CDB301DE.ServiceAdministrator
+[3079] 	Principal: ServiceAdministrator [A3A113A0176346C2B36F3343135D788B_APPID]
+[3080] 	Principal: ServiceAdministrator [2C7C2EF576A74626B8A9674C445EF4E8_APPID]
+[3081] 	Principal: ServiceAdministrator [31331686922D4BA890BF5A76D4204917_APPID]
+[3082] 	Principal: ServiceAdministrator [4D662EBE56D14745AF6F6B4DDC51B0EC_APPID]
+[3083] 	Principal: 77CA4A7063C44B7C91A5D6A66E39828F.ServiceAdministrator
+[3084] 	Principal: ServiceAdministrator [18E06A14610C49129CF82744B33FAF48_APPID]
+[3085] 	Principal: 132743A86F7347DCA1CE8E79769C255A.ServiceAdministrator
+[3086] 	Principal: 1B0FFD72AFEA4C8E8F94EF2798251D36.ServiceAdministrator
+[3087] 	Principal: ServiceAdministrator [E7C4CA4295C44EE3851642378D8EB107_APPID]
+[3088] 	Principal: ServiceAdministrator [54B6F0BABC2D499C8AC359DDE71C85B6_APPID]
+[3089] 	Principal: 37D1F84D3F6A47328FC235720BC3F208.ServiceAdministrator
+[3090] 	Principal: ServiceAdministrator [E12C6C3D038B44339C1A38AC5BA8D0F6_APPID]
+[3091] 	Principal: 54B6F0BABC2D499C8AC359DDE71C85B6.ServiceAdministrator
+[3092] 	Principal: ServiceAdministrator [AF33621727054CEAACB1FD0A934407D1_APPID]
+[3093] 	Principal: ServiceAdministrator [E264E2105EC84150AC87E33C304CE1B6_APPID]
+[3094] 	Principal: ServiceAdministrator [51719116686040D88F5A8E3B83D1BBDD_APPID]
+[3095] 	Principal: ServiceAdministrator [1F6057024806438794928C426B890CBD_APPID]
+[3096] 	Principal: authenticated-role
+[3097] }.
+[3098] ]]
+
+
+ [3099] [2018-11-26T02:29:02.752+00:00] [icspcsne_server_1] [ERROR] [] [oracle.webservices.jaxws] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] Error while invoking endpoint "http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep" from client; Security Subject: FB6CF2E013B14EFBBD7A5FD008AD0BF1.ServiceAdministrator
+
+ [3100] [2018-11-26T02:29:02.755+00:00] [icspcsne_server_1] [ERROR] [CASDK-0033] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] Soap Fault occurred while invoking endpoint http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep
+
+ [3101] [2018-11-26T02:29:02.756+00:00] [icspcsne_server_1] [ERROR] [] [oracle.osb.transports.jca] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] ErrorCode returned by Cloud Provider => ns0:missingRequest
+
+ [3102] [2018-11-26T02:29:02.758+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] JCABinding <outbound> Connection Properties : [[[3103] [managedSecurity : true]
+[3104] [endpointURL : http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep]
+[3105] [targetWSDLURL : http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep?WSDL]
+[3106] [security : NONE]
+[3107] [applicationVersion : 1_0]
+[3108] [cloudAdapterName : soap]
+[3109] 
+[3110] ]]
+
+
+ [3111] [2018-11-26T02:29:02.758+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] JCABinding <outbound> Message Headers : [[[3112] [tracking.execution.context : 1.0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8;laEUscpgv0YOjITOZSPPi3VRXU8TmHROfPQRbUBGjTOSjJTQoLPIiJSTXURO_PGPp1CCo7FD0_NRmHROgLQBnVPOi4USXJRQdURPi9IRnKTOiJPP9KPDl2FDn3DWq6GRjNTI^PKCk0CCDKKHlOJDINDI2OCJIPOSm9OPl2LUhMLMk0CCn6OK0_RRmHROgLQBnVPOi4USXJRQdURPi1LTdLRSZPQRbVGS_ITOoPRRiUHOhLRDkIVRZLRSnGZOjITOZSPPi3VRXU8TmHROfPQRbUBGjTOSjJTQoLRK3HHHiKTQoPTI^LDCm9CEt0ZOjITOZSPPi3VRXU8TmHROfPQRbU9KpPPPnJPQiNRK3HHHiKTQoPTI^LDCm9DEl0YLjITOZSPPi3VRXU8TmHROfPQRbUAHgVRT5MTPiKTI^LDCn5DDr0XPjITOZSPPi3VRXU8TmHROfPQRbU9IiJSTXURO_PGP3ITPXKTQjUOLdTPP4HDDo3DCt9FCo2CDn2CWUVQSXJOR_UBSjHQBoITOZRPQiNQB6SRRrJIS_HOTdVQRKPPR_KHCp4FCl9DEn4ECn0FD0eNRmHROgLQBnVPOi4USXJRQdURPi2HTnPQR_JVS5MTPiKTI^KECm9EC0XNRmHROgLQBnVPOi4USXJRQdURPi6GRjNTI^JDDs0CWMVQSXJOR_UBSjHQBoITOZRPQiNQBJJHG5UOTdKTU9KPDl2DEt2CWXVQSXJOR_UBSjHQBoITOZRPQiNQB6SRRrJNG1GLOmKTQoPRRiPGPl2CW3JOTsLKS^HOT_JLSgKCTmLTP]
+[3113] [tracking.wrapped.dms.context : 1.0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8;laEUscpgv0YOjITOZSPPi3VRXU8TmHROfPQRbUBGjTOSjJTQoLPIiJSTXURO_PGPp1CCo7FD0_NRmHROgLQBnVPOi4USXJRQdURPi9IRnKTOiJPP9KPDl2FDn3DWq6GRjNTI^PKCk0CCDKKHlOJDINDI2OCJIPOSm9OPl2LUhMLMk0CCn6OK0_RRmHROgLQBnVPOi4USXJRQdURPi1LTdLRSZPQRbVGS_ITOoPRRiUHOhLRDkIVRZLRSnGZOjITOZSPPi3VRXU8TmHROfPQRbUBGjTOSjJTQoLRK3HHHiKTQoPTI^LDCm9CEt0ZOjITOZSPPi3VRXU8TmHROfPQRbU9KpPPPnJPQiNRK3HHHiKTQoPTI^LDCm9DEl0YLjITOZSPPi3VRXU8TmHROfPQRbUAHgVRT5MTPiKTI^LDCn5DDr0XPjITOZSPPi3VRXU8TmHROfPQRbU9IiJSTXURO_PGP3ITPXKTQjUOLdTPP4HDDo3DCt9FCo2CDn2CWUVQSXJOR_UBSjHQBoITOZRPQiNQB6SRRrJIS_HOTdVQRKPPR_KHCp4FCl9DEn4ECn0FD0eNRmHROgLQBnVPOi4USXJRQdURPi2HTnPQR_JVS5MTPiKTI^KECm9EC0XNRmHROgLQBnVPOi4USXJRQdURPi6GRjNTI^JDDs0CWMVQSXJOR_UBSjHQBoITOZRPQiNQBJJHG5UOTdKTU9KPDl2DEt2CWXVQSXJOR_UBSjHQBoITOZRPQiNQB6SRRrJNG1GLOmKTQoPRRiPGPl2CW3JOTsLKS^HOT_JLSgKCTmLTP]
+[3114] [Content-Type : text/xml]
+[3115] 
+[3116] ]]
+
+
+ [3117] [2018-11-26T02:29:02.759+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] JCABinding <outbound> Integration Payload : [[[3118]  <process xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:nstrgmpr="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError">
+[3119]    <nstrgmpr:input>Automation</nstrgmpr:input>
+[3120] </process>
+[3121] 
+[3122] ]]
+
+
+ [3123] [2018-11-26T02:29:02.759+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] JCABinding <outbound> Dispatch Request Context : [[[3124] [oracle.j2ee.ws.client.dispatch : oracle.j2ee.ws.client.jaxws.OracleDispatchImpl@76978d1e]
+[3125] [javax.net.ssl.trustStore : kss://system/trust]
+[3126] [oracle.webservices.httpReadTimeout : 300000]
+[3127] [oracle.webservices.proxyHost : www-proxy.us.oracle.com]
+[3128] [javax.net.ssl.trustStoreType : kss]
+[3129] [oracle.webservices.httpConnTimeout : 300000]
+[3130] [oracle.jaxws.dispatch.policy.subject : http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError#wsdl.endpoint(throwerror_client_ep/ThrowError_pt)|throwerror_client_ep|/icspcsne_domain/icspcsne_server_1/Service Bus JCA Transport Provider/WEBs/default/WEBSERVICECLIENTs/%7Bhttp%3A%2F%2Fxmlns.oracle.com%2FGradingSystem_refined%2FThrowError%2FThrowError%7Dthrowerror_client_ep/PORTs/ThrowError_pt]
+[3131] [javax.xml.ws.soap.http.soapaction.use : true]
+[3132] [javax.xml.ws.service.endpoint.address : http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep]
+[3133] [javax.xml.ws.binding.attachments.outbound : {}]
+[3134] [javax.xml.ws.soap.http.soapaction.uri : process]
+[3135] [oracle.webservices.proxyPort : 80]
+[3136] 
+[3137] ]]
+
+
+ [3138] [2018-11-26T02:29:02.760+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] JCABinding <outbound> Source Wsdl Metadata : [[[3139] endpointURL : http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep
+[3140] portName : ThrowError_pt
+[3141] portTypeName : {http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError}ThrowError
+[3142] soapVersion : SOAP11
+[3143] targetWSDLNS : http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError
+[3144] 
+[3145] ]]
+
+
+ [3146] [2018-11-26T02:29:02.760+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] JCABinding <outbound> SoapEnvelope : [[[3147] POST http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep HTTP/1.1 
+[3148] Content-Type : text/xml
+[3149] SOAPAction : process
+[3150] <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+[3151] <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+[3152] <env:Header/>
+[3153] <env:Body>
+[3154] <process xmlns="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError" xmlns:nstrgmpr="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+[3155] <nstrgmpr:input>Automation</nstrgmpr:input>
+[3156] </process>
+[3157] </env:Body>
+[3158] </env:Envelope>
+[3159] 
+[3160] ]]
+
+
+ [3161] [2018-11-26T02:29:02.761+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] JCABinding <outbound> SOAPFault : [[[3162] Received a SOAP fault while invoking endpoint target: http://adc2120106.us.oracle.com:8001/soa-infra/services/default/ThrowError/throwerror_client_ep. This indicates a processing exception on the service endpoint side. Please check service side logs to further diagnose the problem <![CDATA[ 
+[3163] Fault Code : ns0:missingRequest
+[3164] Fault String : faultName: {{http://docs.oasis-open.org/wsbpel/2.0/process/executable}missingRequest}
+[3165] messageType: {{http://schemas.oracle.com/bpel/extension}RuntimeFaultMessage}
+[3166] 
+[3167] Fault Details : 
+[3168] <exception/>
+[3169]  ]]>
+[3170] ]]
+
+
+ [3171] [2018-11-26T02:29:02.762+00:00] [icspcsne_server_1] [ERROR] [] [oracle.soa.adapter] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] JCABinding <outbound> Request Payload : [[[3172] <process xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:nstrgmpr="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://xmlns.oracle.com/GradingSystem_refined/ThrowError/ThrowError">
+[3173]    <nstrgmpr:input>Automation</nstrgmpr:input>
+[3174] </process>
+[3175] 
+[3176] ]]
+
+
+ [3177] [2018-11-26T02:29:02.764+00:00] [icspcsne_server_1] [ERROR] [OSB-381990] [oracle.osb.transports.jca.jcatransport] [tid: [ACTIVE].ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] [userId: ssaInstanceAdmin] [ecid: 0c4eecad-5e58-4986-bf8b-fa4c975c8a9a-000132c8,1:28616:33] [partition-name: DOMAIN] [tenant-name: GLOBAL] [oracle.soa.tracking.FlowId: 580] [oracle.soa.tracking.InstanceId: 12733] [oracle.soa.tracking.SCAEntityId: 12992] [composite_name: GRADING!01.00.0000] [FlowId: 0000MTDqH7R7IB8LRip2id1RymVY0003fP] Invoke JCA outbound service failed with application error, exception: Client received SOAP Fault from server : faultName: {{http://docs.oasis-open.org/wsbpel/2.0/process/executable}missingRequest}[[[3178] messageType: {{http://schemas.oracle.com/bpel/extension}RuntimeFaultMessage}
+[3179] 
+[3180] ]]
+

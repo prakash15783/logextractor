@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Extract Logs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>Upload the zip file from which logs need to be extracted</p>
+<table>
+    <tr>
+        <td>
+            <form action="/extract/extractFile" method="post" enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <td>
+                            File:
+                        </td>
+                        <td>
+                            <input type="file" name="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Instance ID:
+                        </td>
+                        <td>
+                            <input type="text" name="instanceId">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Flow Name:
+                        </td>
+                        <td>
+                            <input type="text" name="flowName">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Include Line No:
+                        </td>
+                        <td>
+                            <input type="checkbox" name="lineNo">
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Submit">
+            </form>
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>

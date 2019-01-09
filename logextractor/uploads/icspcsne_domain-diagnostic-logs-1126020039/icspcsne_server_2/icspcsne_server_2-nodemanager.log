@@ -1,0 +1,57 @@
+<Nov 25, 2018 10:16:09 PM UTC> <INFO> <Loading domains file: /u01/data/domains/icspcsne_domain/nodemanager/nodemanager.domains>
+<Nov 25, 2018 10:16:09 PM UTC> <INFO> <Upgrade> <Setting NodeManager properties version to 12.2.1.2.0>
+<Nov 25, 2018 10:16:09 PM UTC> <INFO> <Upgrade> <Saving upgraded NodeManager properties to '/u01/data/domains/icspcsne_domain/nodemanager/nodemanager.properties'>
+<Nov 25, 2018 10:16:09 PM UTC> <INFO> <Loading domains file: /u01/data/domains/icspcsne_domain/nodemanager/nodemanager.domains>
+<Nov 25, 2018 10:16:09 PM UTC> <INFO> <Loading identity key store: FileName=/u01/data/domains/icspcsne_domain/security/DemoIdentity.jks, Type=jks, PassPhraseUsed=true>
+<Nov 25, 2018 10:16:09 PM UTC> <FINE> <Instantiated and loaded KeyStore, type=jks, source=/u01/data/domains/icspcsne_domain/security/DemoIdentity.jks>
+<Nov 25, 2018 10:16:09 PM UTC> <INFO> <Loaded NodeManager configuration properties from '/u01/data/domains/icspcsne_domain/nodemanager/nodemanager.properties'>
+<Nov 25, 2018 10:16:09 PM UTC> <INFO> <12.2.1.2.0>
+<Nov 25, 2018 10:16:10 PM UTC> <INFO> <Secure socket listener started on port 5556, host icspcsnewdaily21-wls-2.opcics.oracleinternalden14.nimbula.oraclecorp.com/10.196.72.226>
+<Nov 25, 2018 10:16:13 PM UTC> <FINE> <icspcsne_domain> <States = {}>
+<Nov 25, 2018 10:16:13 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:16:15 PM UTC> <INFO> <Re-loading domains file: /u01/data/domains/icspcsne_domain/nodemanager/nodemanager.domains>
+<Nov 25, 2018 10:16:15 PM UTC> <FINE> <icspcsne_domain> <States = {}>
+<Nov 25, 2018 10:16:15 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:16:15 PM UTC> <FINE> <icspcsne_domain> <States = {icspcsne_server_2=UNKNOWN}>
+<Nov 25, 2018 10:16:15 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:16:15 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Creating directory "/u01/data/domains/icspcsne_domain/servers/icspcsne_server_2/data/nodemanager">
+<Nov 25, 2018 10:16:15 PM UTC> <FINE> <icspcsne_domain> <States = {icspcsne_server_2=SHUTDOWN}>
+<Nov 25, 2018 10:16:15 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:16:15 PM UTC> <FINE> <icspcsne_domain> <States = {icspcsne_server_2=SHUTDOWN}>
+<Nov 25, 2018 10:16:15 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:16:16 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Creating directory "/u01/data/domains/icspcsne_domain/servers/icspcsne_server_2/logs">
+<Nov 25, 2018 10:16:16 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Creating directory "/u01/data/domains/icspcsne_domain/servers/icspcsne_server_2/security">
+<Nov 25, 2018 10:16:16 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Creating directory "/u01/data/domains/icspcsne_domain/servers/icspcsne_server_2/tmp">
+<Nov 25, 2018 10:16:16 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Boot identity properties saved to "/u01/data/domains/icspcsne_domain/servers/icspcsne_server_2/data/nodemanager/boot.properties">
+<Nov 25, 2018 10:16:16 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Startup configuration properties saved to "/u01/data/domains/icspcsne_domain/servers/icspcsne_server_2/data/nodemanager/startup.properties">
+<Nov 25, 2018 10:16:16 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Server error log also redirected to server log>
+<Nov 25, 2018 10:16:16 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Starting WebLogic server with command line: /u01/data/domains/icspcsne_domain/bin/startJCSServer.sh >
+<Nov 25, 2018 10:16:16 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Working directory is '/u01/data/domains/icspcsne_domain'>
+<Nov 25, 2018 10:16:16 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Server output log file is '/u01/data/domains/icspcsne_domain/servers/icspcsne_server_2/logs/icspcsne_server_2.out'>
+<Nov 25, 2018 10:17:36 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <The server 'icspcsne_server_2' is running now.>
+<Nov 25, 2018 10:27:51 PM UTC> <FINE> <icspcsne_domain> <States = {icspcsne_server_2=FORCE_SHUTTING_DOWN}>
+<Nov 25, 2018 10:27:51 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:27:51 PM UTC> <FINE> <icspcsne_domain> <States = {icspcsne_server_2=FORCE_SHUTTING_DOWN}>
+<Nov 25, 2018 10:27:51 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:27:52 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <The server 'icspcsne_server_2' with process id 12511 is no longer alive; waiting for the process to die.>
+<Nov 25, 2018 10:27:52 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Server was shut down normally>
+<Nov 25, 2018 10:27:52 PM UTC> <FINE> <icspcsne_domain> <States = {icspcsne_server_2=SHUTDOWN}>
+<Nov 25, 2018 10:27:52 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:30:59 PM UTC> <INFO> <Re-loading domains file: /u01/data/domains/icspcsne_domain/nodemanager/nodemanager.domains>
+<Nov 25, 2018 10:30:59 PM UTC> <FINE> <icspcsne_domain> <States = {icspcsne_server_2=SHUTDOWN}>
+<Nov 25, 2018 10:30:59 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:30:59 PM UTC> <FINE> <icspcsne_domain> <icspcsne_server_2> <Will not initialize state when current state is set: SHUTDOWN>
+<Nov 25, 2018 10:32:50 PM UTC> <FINE> <icspcsne_domain> <States = {icspcsne_server_2=SHUTDOWN}>
+<Nov 25, 2018 10:32:50 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:32:50 PM UTC> <FINE> <icspcsne_domain> <States = {icspcsne_server_2=SHUTDOWN}>
+<Nov 25, 2018 10:32:50 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:32:54 PM UTC> <FINE> <icspcsne_domain> <States = {icspcsne_server_2=SHUTDOWN}>
+<Nov 25, 2018 10:32:54 PM UTC> <FINE> <icspcsne_domain> <Coherence States = {}>
+<Nov 25, 2018 10:32:54 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Boot identity properties saved to "/u01/data/domains/icspcsne_domain/servers/icspcsne_server_2/data/nodemanager/boot.properties">
+<Nov 25, 2018 10:32:54 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Startup configuration properties saved to "/u01/data/domains/icspcsne_domain/servers/icspcsne_server_2/data/nodemanager/startup.properties">
+<Nov 25, 2018 10:32:54 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Rotated server output log to "/u01/data/domains/icspcsne_domain/servers/icspcsne_server_2/logs/icspcsne_server_2.out00001">
+<Nov 25, 2018 10:32:54 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Server error log also redirected to server log>
+<Nov 25, 2018 10:32:54 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Starting WebLogic server with command line: /u01/data/domains/icspcsne_domain/bin/startJCSServer.sh >
+<Nov 25, 2018 10:32:54 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Working directory is '/u01/data/domains/icspcsne_domain'>
+<Nov 25, 2018 10:32:54 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <Server output log file is '/u01/data/domains/icspcsne_domain/servers/icspcsne_server_2/logs/icspcsne_server_2.out'>
+<Nov 25, 2018 10:41:11 PM UTC> <INFO> <icspcsne_domain> <icspcsne_server_2> <The server 'icspcsne_server_2' is running now.>
